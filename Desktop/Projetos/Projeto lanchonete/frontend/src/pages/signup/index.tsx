@@ -12,13 +12,17 @@ export default function SignUp() {
     <>
     <Head>
       <title>
-        Top Lanches - Faça seu login
+       Faça seu cadastro agora!
       </title>
     </Head>
       <div className={styles.contanerCenter}>
         <Image src={logoImg} alt="Logo Top Lanches"/>
         <div className={styles.login}>
+
+        <h1>Criando sua conta</h1>
+
           <form>
+            <Input placeholder='Digite seu nome' type='text'/>
             <Input placeholder='Digite seu email' type='text'/>
             <Input placeholder='Digite sua senha' type='password'/>
 
@@ -26,12 +30,12 @@ export default function SignUp() {
             type="submit"
             loading={false}
             >
-              Acessar
+              Cadastrar
               </Button>
           </form>
 
-          <Link href="/senha">
-          <a className={styles.text}> Não possui uma conta? Cadrastre-se</a>
+          <Link href="/">
+          <a className={styles.text}> Já possui uma conta? Faça o login!</a>
           </Link>
 
         </div>
